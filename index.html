@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="AbCdEf123456XYZ">
+
+  <title>Image Quality Resizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Image Quality Resizer</h1>
+    <p>Change image quality without changing dimensions</p>
+
+    <input type="file" id="upload" accept="image/*">
+
+    <div class="preview">
+      <img id="previewImg">
+    </div>
+
+    <div class="controls">
+      <label for="qualityInput">Image Quality (1–100)</label>
+      <input
+        type="number"
+        id="qualityInput"
+        min="1"
+        max="100"
+        value="80"
+      >
+    </div>
+
+    <button id="processBtn">Process Image</button>
+
+    <div class="result">
+      <a id="downloadBtn" download>Download Image</a>
+      <p id="info"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
